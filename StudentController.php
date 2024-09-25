@@ -27,4 +27,12 @@ class StudentController
             return redirect('list');
         }
     }
+    function edit($id){
+        $student=Bike::find($id);
+        return view('edit',['student'=>$student]);
+    }
+function editstudent(Request $request ,$id){
+return $request->input();
 }
+}
+
